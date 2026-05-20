@@ -1,0 +1,13 @@
+Connor Riley
+criley16@vols.utk.edu
+For Hamming Distance compile using make or:
+  > g++ -Wall -g    hamming_distance.cpp   -o hamming_distance
+Run by either using make run or:
+  > ./hamming_distance
+
+Neighbor Vs Kitsch
+
+The neighbor branches vary more widely and also have lengths below zero. 
+It also has no single root and it seems some are evolving faster than others in the tree.
+Kitsch has all branches gradually increasing from the root and the farthest distances are all equal.
+The rate of each leafs evolution is roughly equal to the others

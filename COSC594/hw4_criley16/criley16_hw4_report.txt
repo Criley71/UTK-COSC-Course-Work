@@ -1,0 +1,35 @@
+11 indels
+16 snps
+
+When compaing the ames and ames ancestor using Mummer's show-snps 
+only 27 total variations are found. Specifically 11 indels and 16 snps.
+Looking closer the BUFF column in the file shows the distance since the last
+indel or snps, with a few happening close to one another, within about 55 
+nucleotides, or quite far apart, typically over 100,000 nucleotides away. 
+With only 27 variations the genetic variation between ames and its ancestor
+are significantly small with each sequence being 5.3 million nucleotides long.
+This is about a 0.00051% variation between the 2 genomes. Overall this signifies 
+no major structural variation between the sequences but the amount of closely 
+spaces indels and snps may show that a gene may be different but no where on a
+large scale is it significant. A possible biological hypothesis from this analysis
+could be the variations caused a change that makes the ames organism different from 
+the ames ancestor leading to natural selection having the mutation become the 
+norm for the ames organsims.
+
+contigs: 77
+Assembly Size: 4,995,393
+Average Contig Size: 64,875
+N50: 112,039
+reference coverage = 93.15%
+
+When performing the alignment on the assembly and reference genomes I found 77 
+conitgs using the show-coords program and counting all unique tags produced. 
+The assembly size was 4,995,393 nucleotides long with an average contig size
+of 64,875. The N50 is 112,039 meaning that half of the assembly is in contigs 
+longer than 112,039 nucleotides. Finding the reference coverage the total amount 
+was 93.15% covered with some contigs being 100% covered with others
+being less than 6% covered. Combining all these factors together this appears to be 
+a decent assembly with the pros being the genome having a good N50 and decent contig coverage. 
+However, the large amount of contigs means that the sequence is fragmented with some contigs being poorly covered.
+While the sequence should be good for most purposes, the lack of the full sequence with this many
+contigs means that it shouldnt be used for full sequence structural inferences with the limited sequence.

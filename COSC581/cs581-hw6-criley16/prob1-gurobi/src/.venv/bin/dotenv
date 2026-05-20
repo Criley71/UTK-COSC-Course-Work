@@ -1,0 +1,8 @@
+#!/home/criley/COSC581/cs581-hw6-criley16/prob1-gurobi/src/.venv/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from dotenv.__main__ import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())

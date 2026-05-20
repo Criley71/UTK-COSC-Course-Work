@@ -1,0 +1,33 @@
+Connor Riley HW3
+
+1. untar file, cd into dir and then make:
+  >tar -xvf hw3_criley16.tar
+  >cd hw3_criley16
+  >make
+    1a. if make for some reason doesnt work then use: 
+    >g++ -Wall -std=c++17 -g -o casino_simulator casino_simulator.cpp
+    >g++ -Wall -std=c++17 -g    forward.cpp   -o forward
+    >g++ -Wall -std=c++17 -g    viterbi.cpp   -o viterbi
+
+2. Simulate a Hidden Markov Model (8 pts)
+  run:
+    >./casino_simulator
+  
+  this will output into the console and rolls.txt
+
+3. Forward Algorithm – Compute Probabilities (10 pts)
+  run:
+    >./forward
+  
+  this will output the probabilities into the console for each casino benchmark
+
+4. Viterbi Decoding – Most Likely State Path (10 pts)
+  run:
+    >./viterbi
+  
+  will output into viterbi.1.txt and viterbi.2.txt
+
+5. GLIMMER Gene Prediction (8 pts total)
+  found in the .predict files
+  the ames_lab predicted 5575 genes (subtracted 1 bc of header)
+  the ames_ancestor predicted 5568 genes(subtracted 1 bc of header)

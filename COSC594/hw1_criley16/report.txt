@@ -1,0 +1,76 @@
+I have read and agree to the terms of the COSC 494/594 Honor Code.
+=================================================
+USAGE:
+1.extract tar file and move to directory:
+  > tar -xvf criley16_hw1.tar
+  > cd criley16_hw1
+
+2. compile using makefile
+  > make 
+  2a. if make doesnt work
+    > g++ -Wall -std=c++17 -o reverse_complement reverse_complement.cpp
+    > g++ -Wall -std=c++17 -o frequency_analysis frequency_analysis.cpp
+    > g++ -Wall -std=c++17 -o model_probability model_probability.cpp
+    > g++ -Wall -std=c++17 -o markov_generator markov_generator.cpp
+
+3. for part 3, Reverse Complement Generator
+  > ./reverse_complement
+
+4. for part 4, Nucleotide and Dinucleotide Frequencies
+  > ./frequency_analysis
+  4a. If given a fasta file as a command line argument it will give the frequencies for that sequence
+      otherwise it will do lambda.fasta by default
+
+5. for part 6, Sequence Probability Modeling
+  > ./model_probability
+
+6. for part 7, Markov-Based Random Sequence Generator, this will output to markov_simulated.fasta
+  > ./markov_generator
+  6a. if you want to do frequency analysis on the generated sequence:
+    > ./frequency_analysis markov_simulated.fasta
+
+=================================================
+
+PROBABILITIES of lambda.fasta:
+
+Part 4)
+Nucleotide Frequencies:
+A:  0.2542987918024
+C:  0.234258381097687
+G:  0.264318997154756
+T:  0.247123829945157
+
+Dinucleotide Frequencies:
+AA: 0.076122141811509
+AC: 0.0530504525679883
+AG: 0.0563287354899899
+AT: 0.0688027050988639
+CA: 0.0663079111770891
+CC: 0.0514834745675347
+CG: 0.0641842436238428
+CT: 0.0522875816993464
+GA: 0.0671326364404858
+GC: 0.0745345456794705
+GG: 0.0655656584400322
+GT: 0.0570709882270469
+TA: 0.0447413455392672
+TC: 0.0551947382528195
+TG: 0.0782251912331705
+TT: 0.0689676501515433
+
+
+Part 6)
+Neanderthal Multinomial Model log-probability:        -452.662312232692
+Neanderthal Third-Order Markov Model log-probability: -451.796605782161
+The replacement of N's with A's actually affected the ouput, the markov model being 
+more probable is interesting as it requires more specific sequences 
+
+
+Part 7)
+Comparing the probabilities of the nucleotides and dinucleotides between the 
+human mitochondria sequence and the sequence generated using a third-order 
+Markov model trained on the human mitochondria sequence, the probabilities
+of the dinucleotides are very similar where the largest difference is about 
+a .0015 in AG (at least for what I had generated when writing this, 
+a new one is made when running markov_generator) All other dinucleotides had 
+a probability difference less than that between the actual vs generated sequences.

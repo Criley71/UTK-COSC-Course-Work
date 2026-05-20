@@ -1,0 +1,194 @@
+Connor Riley
+  
+1)USAGE: 
+  1.extract tar file and move to directory:
+    > tar -xvf hw2_criley.tar
+    > cd hw2_criley
+  2. compile using makefile
+    > make 
+  2a. if make doesnt work
+    g++ -Wall -std=c++17 -g -o globalign globalign.cpp
+    g++ -Wall -std=c++17 -g -o localign localign.cpp
+    g++ -Wall -std=c++17 -g -o egfalign egfalign.cpp
+    g++ -Wall -std=c++17 -g -o ls_egfalign ls_egfalign.cpp
+
+2) Global Alignment Results:
+USAGE: 
+  >./globalign
+RESULTS
+(Visualized alignment at the bottom of the report)
+Alignment Score: -1016
+Number of matches:    1137/2848 (39.9228%)
+Number of gaps:       1579/2848 (55.4424%)
+Number of mismatches: 132/2848 (4.63483%)
+
+3) Local Alignment Results:
+USAGE: 
+  >./localign
+RESULTS:
+Max Alignment Score: 820
+Sequence starts at Coordinates (190, 3) and ends at coordinates (1489, 1267)
+The sequence is 1360 nucleotides long
+Number of matches:    779/1360 (57.2794%)
+Number of gaps:       157/1360 (11.5441%)
+Number of mismatches: 424/1360 (31.1765%)
+
+The local Alignment sequence is about half as long as the global alignment sequence.
+The amount of gaps has decreased while the amount of matches and mismatches increase in frequency.
+With the scoring being +2 for matches, -1 for mismatches and -2 for gaps leads to the score being 
+-1016 in the global alignment, but with the significant decreases in gaps, the local score maxes out at 820.
+Biologically, this sequence may be a shared gene between the 2 species or can even show a common anscestory.
+
+4) End-Gap Free Alignment Results:
+USAGE:
+  > ./egfalign 
+RESULTS:
+Alignment Score: 620
+The sequence is 345 nucleotides long
+Number of matches:    322/345 (93.3333%)
+Number of gaps:       1/345 (0.289855%)
+Number of mismatches: 22/345 (6.37681%)
+
+5) Blastn Comparison
+Score = 284 bits (366),  Expect = 9e-80
+Identities = 294/405 (73%), Gaps = 0/405 (0%)
+The blastn sequence is significantly shorter than the local alignment I calculated
+This could be due to the scoring metrics of blastn, as it had a higher match rate and no gaps compared to mine.
+
+6) Mystery Sequence
+Using blastn, the top results were all mosquitos, specifically mosquitos that are vectors
+of disease for malaria, the Anopheles coluzzii.
+The top 5 species name and accession:
+Anopheles coluzzii XM_049606281
+Anopheles gambiae  XM_061651125.1
+Anopheles coluzzii XM_049606276.1
+Anopheles gambiae  XM_061651120.1
+Anopheles coluzzii XM_049606279.1
+
+7) Linear Space End-Gap Free Alignment
+USAGE:
+  > ./ls_egfalign
+RESULTS:
+Score: 620
+The main trade off is the lack of trace back unless using Hirschberg's algorithm.
+However, since we only need the score, only the current row and previous row are needed.
+meaning we would have a space of m where m is the size of one of the DNA sequences,
+as we only need 2 vectors of size m for the algorithm.   
+
+
+Global Alignment:
+Droso: TTCGCACGGCGTGCGTTTGGCTGAACACAGCAGTCTCTTGGCTAAAGCTTTCATGAGCAGTGCATGTAATAAAAACTGAGATCCAACTATGTTTACATTG
+MATCH: -----|-----------|-||---|X|-|-|||-----|--|---|-----|---|||-|-|-|-|----------|--|-----|--|----|-||--|
+Human: -----A-----------T-GC---AGA-A-CAG-----T--C---A-----C---AGC-G-G-A-G----------T--G-----A--A----T-CA--G
+
+Droso: CAACCAACTCCAACTGCTATAGGCACCGTGGTTCCCCCATGGTCAGCGGGAACATTGATAGAGCGCCTGCCGTCTTTAGAAGACATGGCTCACAAGGGTC
+MATCH: -------||----|-|--X|--|----||-|-|----|X|X||||X||||--|-------|-||XX|||-|--|----|--|||-|--|-|||------|
+Human: -------CT----C-G--GT--G----GT-G-T----CTTTGTCAACGGG--C-------G-GCCACTG-C--C----G--GAC-T--C-CAC------C
+
+Droso: ACAGTGGAGTAAATCAGCTGGGTGGCGTTTTTGTTGGAGGAAGGCCTTTGCCAGATTCAACACGGCAAAAAATTGTCGAACTGGCACATTCTGGAGCTCG
+MATCH: -|-|-|X||---|--|----------|--X|||-|--|-|-|-|-|--|---||-X||-|||--||--------|--|----|||-|---|--|-||-|-
+Human: -C-G-GCAG---A--A----------G--ATTG-T--A-G-A-G-C--T---AG-CTC-ACA--GC--------G--G----GGC-C---C--G-GC-C-
+
+Droso: GCCATGTGATATTTCTCGAATTCTGCAAGTATCAAATGGATGTGTGAGCAAAATTCTCGGGAGGTATTATGAAACAGGAAGCATACGACCACGTGCTATC
+MATCH: |---||X||X|||||X|||||||||||X||X||X||X|||||||||||X||||||||X||X||||||||X|----|-|-|-|-|--|---X|-|-|X|||
+Human: G---TGCGACATTTCCCGAATTCTGCAGGTGTCCAACGGATGTGTGAGTAAAATTCTGGGCAGGTATTACG----A-G-A-C-T--G---GC-T-CCATC
+
+Droso: GGAGGATCCAAGCCACGTGTGGCCACAGCCGAAGTCGTTAGCAAAATTTCGCAGTACAAACGCGAGTGTCCTAGCATATTTGCTTGGGAAATTCGGGATA
+MATCH: --|-||--|---|||---|-||-||-|-X||--||-|---|-------|---|||--||||-|||--|----||--||---||----|--|--|------
+Human: --A-GA--C---CCA---G-GG-CA-A-TCG--GT-G---G-------T---AGT--AAAC-CGA--G----AG--TA---GC----G--A--C------
+
+Droso: GATTACTTCAGGAGAACGTTTGTACTAACGATAATATACCAAGTGTGTCCTCAATAAACCGTGTATTGAGAAACTTGGCTGCGCAAAAGGAGCAGCAAAG
+MATCH: ---|-|--|---||||-|-|||||--|X|-|-||-||----|----|-||-|-----|----|||-|----||-------|||-----||||-X||----
+Human: ---T-C--C---AGAA-G-TTGTA--AGC-A-AA-AT----A----G-CC-C-----A----GTA-T----AA-------GCG-----GGAG-TGC----
+
+Droso: CACGGGATCCGGGAGCTCCAGCACATCCGCCGGCAACTCAATCAGCGCAAAAGTGTCTGTCAGCATCGGTGGCAACGTGAGCAATGTGGCAAGCGGATCG
+MATCH: |-|--|-|||---|X||-XX|--|-|-X|--||--|---||||--||----|------|--|-||------|--|--|X|-|--|||--|---|-||--|
+Human: C-C--G-TCC---ATCT-TTG--C-T-TG--GG--A---AATC--CG----A------G--A-CA------G--A--TTA-C--TGT--C---C-GA--G
+
+Droso: AGAGGCACGTTGAGCTCTTCCACCGATCTTATGCAGACAGCCACTCCTCTTAACTCTTCGGAAAGCGGTGGCGCAACGAACTCCGGGGAGGGTAGTGAAC
+MATCH: -|-||---|-|---||-X|--|||-|----|--|-||X|---|-----|X|-|--|--|---||||-||---|--X|--|-|-|----|----|-|X|||
+Human: -G-GG---G-T---CT-GT--ACC-A----A--C-GATA---A-----CAT-A--C--C---AAGC-GT---G--TC--A-T-C----A----A-TAAAC
+
+Droso: AGGAGGCGATTTACGAGAAGCTTCGGCTGTTAAATACTCAGCACGCTGCAGGACCAGGACCACTGGAGCCTGCCAGAGCAGCGCCCTTGGTAGGTCAATC
+MATCH: |-||---|X|X|X||-X||-|X|-|||-------||-X|-|-|-XXX|||--|-||-|---|-|||-|-|-|-||||-|-|-|--|X|-|||--|-X||-
+Human: A-GA---GTTCTTCG-CAA-CCT-GGC-------TA-GC-G-A-AAAGCA--A-CA-G---A-TGG-G-C-G-CAGA-C-G-G--CAT-GTA--T-GAT-
+
+Droso: ACCCAACCACCTAGGAACCCGATCCAGCCACCCCCAGCTGGTGCACGGTAACCATCAGGCACTACAGCAGCATCAACAGCAGAGCTGGCCGCCCCGTCAC
+MATCH: ----||--|-||---||---|-----|--------|-----|-----||-----|---|-|--||-|--|--------|||||-----|||----|--|-
+Human: ----AA--A-CT---AA---G-----G--------A-----T-----GT-----T---G-A--AC-G--G--------GCAGA-----CCG----G--A-
+
+Droso: TATTCCGGATCTTGGTACCCCACCTCTCTTAGCGAAATACCCATCTCATCGGCTCCCAATATCGCATCCGTTACGGCGTATGCATCAGGACCTTCACTTG
+MATCH: -|-----|--|-|||----------------|-|-------||-|-|--|-|--|||----|-|-----|||---|-||||-|--|-||----------|
+Human: -A-----G--C-TGG----------------G-G-------CA-C-C--C-G--CCC----T-G-----GTT---G-GTAT-C--C-GG----------G
+
+Droso: CTCACTCACTGAGTCCACCCAACGACATCAAAAGCCTGGCCAGTATCGGTCACCAGAGAAACTGCCCCGTTGCAACGGAGGACATACATTTAAAAAAAGA
+MATCH: ------X|||---|--------||---------|--|-|||||----||----|-----||-----||--|---||----|-----|------------|
+Human: ------GACT---T--------CG---------G--T-GCCAG----GG----C-----AA-----CC--T---AC----G-----C------------A
+
+Droso: ACTTGATGGTCATCAGTCCGATGAAACGGGCTCCGGTGAAGGTGAAAACTCCAATGGTGGCGCTTCAAATATAGGAAACACTGAGGATGATCAAGCTCGG
+MATCH: |---|||||-|-|--|-||-|-|X||-------|X|-|||-|-|---------|-||-||-|----------|-|----|--||--||-|X|||-||---
+Human: A---GATGG-C-T--G-CC-A-GCAA-------CAG-GAA-G-G---------A-GG-GG-G----------A-G----A--GA--AT-ACCAA-CT---
+
+Droso: CTCATACTAAAAAGAAAGTTGCAACGCAATCGAACATCTTTCACGAACGACCAGATAGACAGTCTTGAAAAAGAGTTTGAACGAACACACTATCCAGATG
+MATCH: |-|||-|---------||||X|||||-X|--|||X|---||||-|-|X|---||---|-|--||------||-|---||--||-----|||-|-|||X||
+Human: C-CAT-C---------AGTTCCAACG-GA--GAAGA---TTCA-G-ATG---AG---G-C--TC------AA-A---TG--CG-----ACT-T-CAGCTG
+
+Droso: TTTTTGCCCGCGAACGTTTGGCTGGAAAGATTGGGTTGCCAGAGGCAAGAATTCAGGTTTGGTTCTCAAACCGTCGAGCAAAATGGCGTCGCGAGGAGAA
+MATCH: ---XX|--||-|||------||||X|||||----------|-|---X||||--||----|XX||-|---|-|--|---|--||---------|||X|-||
+Human: ---AAG--CG-GAA------GCTGCAAAGA----------A-A---TAGAA--CA----TCCTT-T---A-C--C---C--AA---------GAGCA-AA
+
+Droso: GCTGCGAAACCAGCGAAGAACACCAAATTCCACAGGAGCTAGTGCAACTTCTTCCTCTACATCGGCAACCGCCTCTTTGACTGACAGCCCTAACAGCCTA
+MATCH: --|-X|-----|--|--|--|-||----|------|-|--|--|--|-----------|-|---|--|--|----|||||--|--||----|||--||--
+Human: --T-TG-----A--G--G--C-CC----T------G-G--A--G--A-----------A-A---G--A--G----TTTGA--G--AG----AAC--CC--
+
+Droso: AGTGCTTGTTCCTCGCTGCTGTCCGGATCAGCTGGGGGTCCCTCAGTCAGTACCATTAATGGCTTATCGTCTCCAAGCACATTGTCTACTAATGTCAATG
+MATCH: |----||-X|||-X|X||-|||-----|----|----|--||-|-|--||----|--||--|---|----||---||--||--|-|--|-||----||--
+Human: A----TT-ATCC-AGATG-TGT-----T----T----G--CC-C-G--AG----A--AA--G---A----CT---AG--CA--G-C--C-AA----AA--
+
+Droso: CTCCAACGCTTGGCGCTGGGATCGATAGCTCTGAAAGCCCAACACCAATCCCGCACATTCGGCCTAGCTGCACCTCTGACAATGACAATGGTCGTCAAAG
+MATCH: -|---|-------------||||--||-|-|||-|||--|-|-|-X|||-----|||---||--||--||-------|----|-----|--|--||----
+Human: -T---A-------------GATC--TA-C-CTG-AAG--C-A-A-GAAT-----ACA---GG--TA--TG-------G----T-----T--T--TC----
+
+Droso: TGAAGATTGCAGAAGAGTTTGTTCTCCATGCCCACTTGGCGTTGGCGGGCATCAAAATACTCATCATATCCAGAGCAATGGTCACGCCCAAGGTCATGCA
+MATCH: |--|-|-|-|-||||-|---|----|||-----|-X|-|-|-X|XX|X|-|XX||||-|||X|XX|-||-|||||-||--|--|----|-|||-|---||
+Human: T--A-A-T-C-GAAG-G---G----CCA-----A-AT-G-G-AGAAGAG-AAGAAAA-ACTGAGGA-AT-CAGAG-AA--G--A----C-AGG-C---CA
+
+Droso: CTTGTTCCTGCCATTTCGCCACGACTCAATTTTAATAGTGGTAGTTTCGGCGCGATGTACTCCAACATGCATCATACGGCGTTATCCATGAGCGATTCAT
+MATCH: ---------|-||-----X|||-||-|--------||||XX||--||---|-|----||-|----||-|||--X||----|||-|-|---|||-|--|--
+Human: ---------G-CA-----ACAC-AC-C--------TAGTCATA--TT---C-C----TA-T----CA-GCA--GTA----GTT-T-C---AGC-A--C--
+
+Droso: ATGGGGCGGTTACGCCGATTCCGAGCTTTAACCACTCAGCTGTCGGTCCGCTGGCTCCGCCATCGCCAATACCGCAACAGGGCGATCTTACCCCTTCCTC
+MATCH: ------|----|----|--|----|-|X|-||||---|---------||XX|---|---|||----|-|-|||-|-||----|-|-|--|-------|-|
+Human: ------C----A----G--T----G-TCT-ACCA---A---------CCAAT---T---CCA----C-A-ACC-C-AC----C-A-C--A-------C-C
+
+Droso: GTTATATCCGTGCCACATGACCCTACGACCCCCTCCGATGGCTCCCGCTCACCATCACATCGTGCCGGGTGACGGTGGCAGACCTGCGGGCGTTGGCCTA
+MATCH: |X|-|-|||-|--|-|-|-----|-|-|-------|-||--||---|----X|-||-||---|-----||-----|||--|--|--||XX|---X|X|-|
+Human: GGT-T-TCC-T--C-C-T-----T-C-A-------C-AT--CT---G----GC-TC-CA---T-----GT-----TGG--G--C--CGAAC---AGAC-A
+
+Droso: GGCAGTGGCCAATCTGCGAATTTGGGAGCAAGCTGCAGCGGATCGGGATACGAAGTGCTATCTGCCTACGCGTTGCCACCGCCCCCTATGGCGTCGAGCT
+MATCH: --||---|||-X||-X|-||------|-|-|X||X||||-|--|----|-|----|||---|-|||||X||----|||X|XX|X||-|||||XXXX|X|-
+Human: --CA---GCC-CTC-AC-AA------A-C-ACCTACAGC-G--C----T-C----TGC---C-GCCTATGC----CCAGCTTCACC-ATGGCAAATAAC-
+
+Droso: CTGCTGCTGATTCAAGCTTCTCAGCCGCGTCCAGTGCCAGCGCTAATGTGACCCCACATCACACCATAGCCCAAGAATCATGCCCCTCTCCGTGTTCAAG
+MATCH: ||||--||-||X|||-|--|-|--||-X||||----|||||-|--|---||||X|-|-|||X|-|-|---||-X|---||||---||-X||-----|-|-
+Human: CTGC--CT-ATGCAA-C--C-C--CC-AGTCC----CCAGC-C--A---GACCTC-C-TCATA-C-T---CC-TG---CATG---CT-GCC-----C-A-
+
+Droso: CGCGAGCCACTTTGGAGTTGCTCACAGTTCTGGGTTTTCGTCCGACCCGATTTCACCGGCTGTATCTTCGTATGCACATATGAGCTACAATTACGCGTCG
+MATCH: |-|-||||-|-||X|-|-||---|-|----|-||-----|--||----|-----|---|-|-||---|-|-||--||-------||||----||-|--|-
+Human: C-C-AGCC-C-TTCG-G-TG---A-A----T-GG-----G--CG----G-----A---G-T-TA---T-G-AT--AC-------CTAC----AC-C--C-
+
+Droso: TCCGCTAACACCATGACGCCTTCCTCCGCCAGCGGCACATCAGCACACGTGGCCCCGGGAAAACAACAGTTCTTCGCCTCCTGTTTCTACTCACCGTGGG
+MATCH: -||-|---||-|||-|--------|--|-||---|---|-||-||||--|--------|-----|||||-||--X|----|-----|-|---|---|--|
+Human: -CC-C---CA-CAT-A--------T--G-CA---G---A-CA-CACA--T--------G-----AACAG-TC--AG----C-----C-A---A---T--G
+
+Droso: TCTAGGAACAGACTGGCGATTTGAGCAGAGAAGCACTGCGAAAGGACTATTTACATAGTTGAATGTATATCTAAAGGAGGCCATAATAAATCGAATTTAC
+MATCH: ----||--|--||---|----|---|-|-|--||||--|------||---||-|------------|-|-|---||||---|--------||--||||-|
+Human: ----GG--C--AC---C----T---C-G-G--GCAC--C------AC---TT-C------------A-A-C---AGGA---C--------TC--ATTT-C
+
+Droso: ATATCTCTTGAAAAATAATGGAGGTTGTAGAAAAATACATTTGTATGTATAAATTATATAGTTCCGCCCATTAAATCCAATCTATAGTGTAGAATAATTG
+MATCH: ----|-|----------X|---||-|||-|-----|-||---|--|-|-XX|X||-X|-||||---|||-XX||X|-X||-|------X|-|-||-|-|-
+Human: ----C-C----------CT---GG-TGT-G-----T-CA---G--T-T-CCAGTT-CA-AGTT---CCC-GGAAGT-GAA-C------CT-G-AT-A-T-
+
+Droso: GTGTAAATTAAATGATATAATTTTGACAAATAAAAAAAAAAAAAAAAA
+MATCH: ||X|X||-|-|X||-XXX||XX||-||-|X|---------------||
+Human: GTCTCAA-T-ACTG-GCCAAGATT-AC-AGT---------------AA

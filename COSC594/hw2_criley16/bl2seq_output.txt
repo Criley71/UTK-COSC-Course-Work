@@ -1,0 +1,3095 @@
+BLASTN 2.12.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input: drosophila.fasta).
+           1 sequences; 2,848 total letters
+
+
+
+Query= AY707088.1 Homo sapiens paired box gene 6 isoform a mRNA, complete
+cds
+
+Length=1269
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+X79493.1 D.melanogaster ey mRNA (exons 2-9)                           154     1e-40
+
+
+> X79493.1 D.melanogaster ey mRNA (exons 2-9)
+Length=2848
+
+ Score = 154 bits (80),  Expect = 1e-40
+ Identities = 270/363 (74%), Gaps = 2/363 (1%)
+ Strand=Plus/Plus
+
+Query  11   GTCACAGCGGAGTGAATCAGCTCGGTGGTGTCTTTGTCAACGGGCGGCCACTGCCGGACT  70
+            ||||||| ||||| |||||||| ||||| || |||||    ||  ||||  |||| || |
+Sbjct  198  GTCACAGTGGAGTAAATCAGCTGGGTGGCGTTTTTGTTGGAGGAAGGCCTTTGCCAGATT  257
+
+Query  71   CCACCCGGCAGAAGATTGTAGAGCTAGCTCACAGCGGGGCCCGGCCGTGCGACATTTCCC  130
+            | || ||||| || ||||| || || || ||    || || ||||| || || ||||| |
+Sbjct  258  CAACACGGCAAAAAATTGTCGAACTGGCACATTCTGGAGCTCGGCCATGTGATATTTCTC  317
+
+Query  131  GAATTCTGCAGGTGTCCAACGGATGTGTGAGTAAAATTCTGGGCAGGTATTACGAGACTG  190
+            |||||||||| || || || ||||||||||| |||||||| || |||||||| || || |
+Sbjct  318  GAATTCTGCAAGTATCAAATGGATGTGTGAGCAAAATTCTCGGGAGGTATTATGAAACAG  377
+
+Query  191  GCTCCATCAGACCCAGGGCAATCGGTGGTAGTAAACCGAGAGTAGCGACTCCAGAAGTTG  250
+            |   |||  ||||  | || ||||| ||    || ||  | || || ||  | ||||| |
+Sbjct  378  GAAGCATACGACCACGTGCTATCGGAGGATCCAAGCCACGTGTGGCCACAGCCGAAGTCG  437
+
+Query  251  TAAGCAAAATAGCCCAGTATAAGCGGGAGTGCCCGTCCATCTTTGCTTGGGAAATCCGAG  310
+            | ||||||||  | ||||| || || ||||| ||   ||| |||||||||||||| || |
+Sbjct  438  TTAGCAAAATTTCGCAGTACAAACGCGAGTGTCCTAGCATATTTGCTTGGGAAATTCGGG  497
+
+Query  311  ACAGATTACTGTCC-GAGGGGGTCTGTACCAACGATAACATACCAAGCGTGTCATCAATA  369
+            | |||||||| ||  |||   || ||||| |||||||| |||||||| ||||| ||||||
+Sbjct  498  ATAGATTACT-TCAGGAGAACGTTTGTACTAACGATAATATACCAAGTGTGTCCTCAATA  556
+
+Query  370  AAC  372
+            |||
+Sbjct  557  AAC  559
+
+
+ Score = 52.5 bits (27),  Expect = 6e-10
+ Identities = 39/45 (87%), Gaps = 0/45 (0%)
+ Strand=Plus/Plus
+
+Query  679   AAAGAGTTTGAGAGAACCCATTATCCAGATGTGTTTGCCCGAGAA  723
+             |||||||||||  |||| || ||||||||||| |||||||| |||
+Sbjct  1370  AAAGAGTTTGAACGAACACACTATCCAGATGTTTTTGCCCGCGAA  1414
+
+
+ Score = 19.9 bits (10),  Expect = 3.7
+ Identities = 12/13 (92%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  648  CTTTACCCAAGAG  660
+            ||||| |||||||
+Sbjct  47   CTTTAGCCAAGAG  35
+
+
+ Score = 19.9 bits (10),  Expect = 3.7
+ Identities = 10/10 (100%), Gaps = 0/10 (0%)
+ Strand=Plus/Plus
+
+Query  806  AAAAACTGAG  815
+            ||||||||||
+Sbjct  71   AAAAACTGAG  80
+
+
+ Score = 19.9 bits (10),  Expect = 3.7
+ Identities = 10/10 (100%), Gaps = 0/10 (0%)
+ Strand=Plus/Plus
+
+Query  559  ACCAACTCCA  568
+            ||||||||||
+Sbjct  103  ACCAACTCCA  112
+
+
+ Score = 19.9 bits (10),  Expect = 3.7
+ Identities = 10/10 (100%), Gaps = 0/10 (0%)
+ Strand=Plus/Plus
+
+Query  1128  TATGCAGACA  1137
+             ||||||||||
+Sbjct  730   TATGCAGACA  739
+
+
+ Score = 19.9 bits (10),  Expect = 3.7
+ Identities = 10/10 (100%), Gaps = 0/10 (0%)
+ Strand=Plus/Minus
+
+Query  1248  ATACTGGCCA  1257
+             ||||||||||
+Sbjct  1146  ATACTGGCCA  1137
+
+
+ Score = 19.9 bits (10),  Expect = 3.7
+ Identities = 12/13 (92%), Gaps = 0/13 (0%)
+ Strand=Plus/Plus
+
+Query  805   GAAAAACTGAGGA  817
+             |||| ||||||||
+Sbjct  1275  GAAACACTGAGGA  1287
+
+
+ Score = 19.9 bits (10),  Expect = 3.7
+ Identities = 10/10 (100%), Gaps = 0/10 (0%)
+ Strand=Plus/Minus
+
+Query  56    GGCCACTGCC  65
+             ||||||||||
+Sbjct  2210  GGCCACTGCC  2201
+
+
+ Score = 19.9 bits (10),  Expect = 3.7
+ Identities = 10/10 (100%), Gaps = 0/10 (0%)
+ Strand=Plus/Plus
+
+Query  375   AGTTCTTCGC  384
+             ||||||||||
+Sbjct  2568  AGTTCTTCGC  2577
+
+
+ Score = 19.9 bits (10),  Expect = 3.7
+ Identities = 10/10 (100%), Gaps = 0/10 (0%)
+ Strand=Plus/Minus
+
+Query  1093  AATGGGCGGA  1102
+             ||||||||||
+Sbjct  2772  AATGGGCGGA  2763
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Minus
+
+Query  114  GCCGTGCGA  122
+            |||||||||
+Sbjct  10   GCCGTGCGA  2
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 11/12 (92%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  889  CAACCAATTCCA  900
+            ||||||| ||||
+Sbjct  101  CAACCAACTCCA  112
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 11/12 (92%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  249  TGTAAGCAAAAT  260
+            ||| ||||||||
+Sbjct  343  TGTGAGCAAAAT  354
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Plus
+
+Query  536  AACAGGAAG  544
+            |||||||||
+Sbjct  373  AACAGGAAG  381
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 11/12 (92%), Gaps = 0/12 (0%)
+ Strand=Plus/Minus
+
+Query  607  CGACTTCAGCTG  618
+            ||||||| ||||
+Sbjct  437  CGACTTCGGCTG  426
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Minus
+
+Query  127  TCCCGAATT  135
+            |||||||||
+Sbjct  498  TCCCGAATT  490
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Minus
+
+Query  1243  TCTCAATAC  1251
+             |||||||||
+Sbjct  571   TCTCAATAC  563
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Minus
+
+Query  52   GGGCGGCCA  60
+            |||||||||
+Sbjct  994  GGGCGGCCA  986
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 11/12 (92%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  572   GTTCCAACGGAG  583
+             ||| ||||||||
+Sbjct  1169  GTTGCAACGGAG  1180
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Minus
+
+Query  376   GTTCTTCGC  384
+             |||||||||
+Sbjct  1521  GTTCTTCGC  1513
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Plus
+
+Query  894   AATTCCACA  902
+             |||||||||
+Sbjct  1526  AATTCCACA  1534
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 11/12 (92%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  958   ACAGCCCTCACA  969
+             |||||||| |||
+Sbjct  1584  ACAGCCCTAACA  1595
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 11/12 (92%), Gaps = 0/12 (0%)
+ Strand=Plus/Plus
+
+Query  81    GAAGATTGTAGA  92
+             |||||||| |||
+Sbjct  1802  GAAGATTGCAGA  1813
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Plus
+
+Query  680   AAGAGTTTG  688
+             |||||||||
+Sbjct  1813  AAGAGTTTG  1821
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Minus
+
+Query  325   GAGGGGGTC  333
+             |||||||||
+Sbjct  2135  GAGGGGGTC  2127
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Minus
+
+Query  72    CACCCGGCA  80
+             |||||||||
+Sbjct  2171  CACCCGGCA  2163
+
+
+ Score = 18.0 bits (9),  Expect = 14
+ Identities = 9/9 (100%), Gaps = 0/9 (0%)
+ Strand=Plus/Minus
+
+Query  23    TGAATCAGC  31
+             |||||||||
+Sbjct  2314  TGAATCAGC  2306
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  731  CAGCCAAA  738
+            ||||||||
+Sbjct  23   CAGCCAAA  16
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  1149  TCAGCCAA  1156
+             ||||||||
+Sbjct  24    TCAGCCAA  17
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  417  AGACGGCA  424
+            ||||||||
+Sbjct  175  AGACGGCA  168
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  823  AGAAGACA  830
+            ||||||||
+Sbjct  178  AGAAGACA  185
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  239  CTCCAGAA  246
+            ||||||||
+Sbjct  296  CTCCAGAA  289
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  789  CAAATGGA  796
+            ||||||||
+Sbjct  333  CAAATGGA  340
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  716  CCCGAGAA  723
+            ||||||||
+Sbjct  361  CCCGAGAA  354
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  495  GACTTCGG  502
+            ||||||||
+Sbjct  436  GACTTCGG  429
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  730  GCAGCCAA  737
+            ||||||||
+Sbjct  582  GCAGCCAA  575
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  150  CGGATGTG  157
+            ||||||||
+Sbjct  629  CGGATGTG  622
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  952  ACAGACAC  959
+            ||||||||
+Sbjct  660  ACAGACAC  653
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 12/13 (92%), Gaps = 1/13 (8%)
+ Strand=Plus/Plus
+
+Query  27   TCAGC-TCGGTGG  38
+            ||||| |||||||
+Sbjct  660  TCAGCATCGGTGG  672
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  211  ATCGGTGG  218
+            ||||||||
+Sbjct  665  ATCGGTGG  672
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  211  ATCGGTGG  218
+            ||||||||
+Sbjct  727  ATCGGTGG  720
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  489  TCCGGGGA  496
+            ||||||||
+Sbjct  782  TCCGGGGA  789
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  180  TTACGAGA  187
+            ||||||||
+Sbjct  811  TTACGAGA  818
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  1032  ACCCCCAG  1039
+             ||||||||
+Sbjct  930   ACCCCCAG  937
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  463  AGCTGGGG  470
+            ||||||||
+Sbjct  939  AGCTGGGG  932
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  393   TAGCGAAA  400
+             ||||||||
+Sbjct  1030  TAGCGAAA  1037
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  148   AACGGATG  155
+             ||||||||
+Sbjct  1072  AACGGATG  1065
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  1215  TCAAGTTC  1222
+             ||||||||
+Sbjct  1206  TCAAGTTC  1199
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 12/14 (86%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  916   GTTTCCTCCTTCAC  929
+             |||| | |||||||
+Sbjct  1249  GTTTTCACCTTCAC  1236
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  1056  CTCATACT  1063
+             ||||||||
+Sbjct  1301  CTCATACT  1308
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  928   ACATCTGG  935
+             ||||||||
+Sbjct  1401  ACATCTGG  1394
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  731   CAGCCAAA  738
+             ||||||||
+Sbjct  1424  CAGCCAAA  1417
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  684   GTTTGAGA  691
+             ||||||||
+Sbjct  1471  GTTTGAGA  1464
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  253   AGCAAAAT  260
+             ||||||||
+Sbjct  1477  AGCAAAAT  1484
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  624   GAAGCTGC  631
+             ||||||||
+Sbjct  1498  GAAGCTGC  1505
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  243   AGAAGTTG  250
+             ||||||||
+Sbjct  1552  AGAAGTTG  1545
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  463   AGCTGGGG  470
+             ||||||||
+Sbjct  1630  AGCTGGGG  1637
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  1032  ACCCCCAG  1039
+             ||||||||
+Sbjct  1639  ACCCCCAG  1632
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  352   CCAAGCGT  359
+             ||||||||
+Sbjct  1713  CCAAGCGT  1706
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  941   TGTTGGGC  948
+             ||||||||
+Sbjct  1744  TGTTGGGC  1737
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 14/16 (88%), Gaps = 1/16 (6%)
+ Strand=Plus/Plus
+
+Query  583   GAAGATT-CAGATGAG  597
+             ||||||| |||| |||
+Sbjct  1802  GAAGATTGCAGAAGAG  1817
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 10/11 (91%), Gaps = 0/11 (0%)
+ Strand=Plus/Plus
+
+Query  2     TGCAGAACAGT  12
+             ||||||| |||
+Sbjct  1808  TGCAGAAGAGT  1818
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  78    GCAGAAGA  85
+             ||||||||
+Sbjct  1809  GCAGAAGA  1816
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  792   ATGGAGAA  799
+             ||||||||
+Sbjct  1829  ATGGAGAA  1822
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  700   TATCCAGA  707
+             ||||||||
+Sbjct  1867  TATCCAGA  1874
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  662   AAATTGAG  669
+             ||||||||
+Sbjct  1932  AAATTGAG  1925
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  215   GTGGTAGT  222
+             ||||||||
+Sbjct  1938  GTGGTAGT  1945
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  866   GTAGTTTC  873
+             ||||||||
+Sbjct  1941  GTAGTTTC  1948
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  939   CATGTTGG  946
+             ||||||||
+Sbjct  1969  CATGTTGG  1962
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  188   CTGGCTCC  195
+             ||||||||
+Sbjct  2051  CTGGCTCC  2058
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  932   CTGGCTCC  939
+             ||||||||
+Sbjct  2051  CTGGCTCC  2058
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  534   GCAACAGG  541
+             ||||||||
+Sbjct  2074  GCAACAGG  2081
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  544   GGAGGGGG  551
+             ||||||||
+Sbjct  2136  GGAGGGGG  2129
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  272   AGCGGGAG  279
+             ||||||||
+Sbjct  2149  AGCGGGAG  2142
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  452   GGCAGACC  459
+             ||||||||
+Sbjct  2177  GGCAGACC  2184
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  625   AAGCTGCA  632
+             ||||||||
+Sbjct  2230  AAGCTGCA  2237
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  859   ATCAGCAG  866
+             ||||||||
+Sbjct  2311  ATCAGCAG  2304
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  259   ATAGCCCA  266
+             ||||||||
+Sbjct  2366  ATAGCCCA  2373
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  561   CAACTCCA  568
+             ||||||||
+Sbjct  2420  CAACTCCA  2413
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  97    GCTCACAG  104
+             ||||||||
+Sbjct  2420  GCTCACAG  2427
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  1124  cACATATG  1131
+             ||||||||
+Sbjct  2475  CACATATG  2482
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  950   GAACAGAC  957
+             ||||||||
+Sbjct  2606  GAACAGAC  2613
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  185   AGACTGGC  192
+             ||||||||
+Sbjct  2610  AGACTGGC  2617
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  598   GCTCAAAT  605
+             ||||||||
+Sbjct  2626  GCTCAAAT  2619
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 10/11 (91%), Gaps = 0/11 (0%)
+ Strand=Plus/Plus
+
+Query  795   GAGAAGAGAAG  805
+             ||| |||||||
+Sbjct  2623  GAGCAGAGAAG  2633
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Plus
+
+Query  820   CAGAGAAG  827
+             ||||||||
+Sbjct  2626  CAGAGAAG  2633
+
+
+ Score = 16.0 bits (8),  Expect = 53
+ Identities = 8/8 (100%), Gaps = 0/8 (0%)
+ Strand=Plus/Minus
+
+Query  43    TTTGTCAA  50
+             ||||||||
+Sbjct  2830  TTTGTCAA  2823
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  956  ACACAGC  962
+            |||||||
+Sbjct  25   ACACAGC  31
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  861  CAGCAGT  867
+            |||||||
+Sbjct  28   CAGCAGT  34
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  184  GAGACTG  190
+            |||||||
+Sbjct  37   GAGACTG  31
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1254  GCCAAGA  1260
+             |||||||
+Sbjct  42    GCCAAGA  36
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  422  GCATGTA  428
+            |||||||
+Sbjct  62   GCATGTA  68
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1028  TGCAACC  1034
+             |||||||
+Sbjct  99    TGCAACC  105
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1022  TGCCTAT  1028
+             |||||||
+Sbjct  125   TGCCTAT  119
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  500  CGGTGCC  506
+            |||||||
+Sbjct  128  CGGTGCC  122
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1006  ACCATGG  1012
+             |||||||
+Sbjct  143   ACCATGG  137
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  102  CAGCGGG  108
+            |||||||
+Sbjct  144  CAGCGGG  150
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  272  AGCGGGA  278
+            |||||||
+Sbjct  145  AGCGGGA  151
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1219  GTTCCCG  1225
+             |||||||
+Sbjct  153   GTTCCCG  147
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  980  GCGCTCT  986
+            |||||||
+Sbjct  166  GCGCTCT  160
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  97   GCTCACA  103
+            |||||||
+Sbjct  188  GCTCACA  194
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  964  CTCACAA  970
+            |||||||
+Sbjct  189  CTCACAA  195
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  68   ACTCCAC  74
+            |||||||
+Sbjct  210  ACTCCAC  204
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  159  GAGTAAA  165
+            |||||||
+Sbjct  207  GAGTAAA  213
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  612  TCAGCTG  618
+            |||||||
+Sbjct  214  TCAGCTG  220
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  613  CAGCTGA  619
+            |||||||
+Sbjct  220  CAGCTGA  214
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  997   CCCAGCT  1003
+             |||||||
+Sbjct  222   CCCAGCT  216
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  463  AGCTGGG  469
+            |||||||
+Sbjct  216  AGCTGGG  222
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  918  TTCCTCC  924
+            |||||||
+Sbjct  242  TTCCTCC  236
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  539  AGGAAGG  545
+            |||||||
+Sbjct  238  AGGAAGG  244
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1010  TGGCAAA  1016
+             |||||||
+Sbjct  253   TGGCAAA  247
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  930  ATCTGGC  936
+            |||||||
+Sbjct  256  ATCTGGC  250
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  585  AGATTCA  591
+            |||||||
+Sbjct  253  AGATTCA  259
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  443  TGTTGAA  449
+            |||||||
+Sbjct  262  TGTTGAA  256
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1176  TTCAACA  1182
+             |||||||
+Sbjct  256   TTCAACA  262
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1210  CCAGTTC  1216
+             |||||||
+Sbjct  284   CCAGTTC  278
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  502  GTGCCAG  508
+            |||||||
+Sbjct  287  GTGCCAG  281
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  166  ATTCTGG  172
+            |||||||
+Sbjct  288  ATTCTGG  294
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  29   AGCTCGG  35
+            |||||||
+Sbjct  295  AGCTCGG  301
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  634  AGAAATA  640
+            |||||||
+Sbjct  316  AGAAATA  310
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  718  CGAGAAA  724
+            |||||||
+Sbjct  318  CGAGAAA  312
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  165  AATTCTG  171
+            |||||||
+Sbjct  319  AATTCTG  325
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  2    TGCAGAA  8
+            |||||||
+Sbjct  327  TGCAGAA  321
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  600  TCAAATG  606
+            |||||||
+Sbjct  332  TCAAATG  338
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  706  GATGTGT  712
+            |||||||
+Sbjct  339  GATGTGT  345
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1136  CACACAT  1142
+             |||||||
+Sbjct  346   CACACAT  340
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  97   GCTCACA  103
+            |||||||
+Sbjct  349  GCTCACA  343
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  658  GAGCAAA  664
+            |||||||
+Sbjct  346  GAGCAAA  352
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1179  AACAGGA  1185
+             |||||||
+Sbjct  373   AACAGGA  379
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  957  CACAGCC  963
+            |||||||
+Sbjct  424  CACAGCC  430
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1012  GCAAATA  1018
+             |||||||
+Sbjct  483   GCAAATA  477
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  659  AGCAAAT  665
+            |||||||
+Sbjct  484  AGCAAAT  478
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  252  AAGCAAA  258
+            |||||||
+Sbjct  485  AAGCAAA  479
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1189  ATTTCCC  1195
+             |||||||
+Sbjct  492   ATTTCCC  486
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  124  ATTTCCC  130
+            |||||||
+Sbjct  492  ATTTCCC  486
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1258  AGATTAC  1264
+             |||||||
+Sbjct  500   AGATTAC  506
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  609  ACTTCAG  615
+            |||||||
+Sbjct  505  ACTTCAG  511
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  748  CCTGAAG  754
+            |||||||
+Sbjct  512  CCTGAAG  506
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  557  ATACCAA  563
+            |||||||
+Sbjct  536  ATACCAA  542
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  483  TTGGTAT  489
+            |||||||
+Sbjct  542  TTGGTAT  536
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1134  GACACAC  1140
+             |||||||
+Sbjct  549   GACACAC  543
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1199  GTGTGTC  1205
+             |||||||
+Sbjct  543   GTGTGTC  549
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  664  ATTGAGG  670
+            |||||||
+Sbjct  555  ATTGAGG  549
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1244  CTCAATA  1250
+             |||||||
+Sbjct  550   CTCAATA  556
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  222  TAAACCG  228
+            |||||||
+Sbjct  555  TAAACCG  561
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1150  CAGCCAA  1156
+             |||||||
+Sbjct  581   CAGCCAA  575
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  525  TGGCTGC  531
+            |||||||
+Sbjct  576  TGGCTGC  582
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  291  CTTTGCT  297
+            |||||||
+Sbjct  600  CTTTGCT  594
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  488  ATCCGGG  494
+            |||||||
+Sbjct  607  ATCCGGG  613
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1221  TCCCGGA  1227
+             |||||||
+Sbjct  614   TCCCGGA  608
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  25   AATCAGC  31
+            |||||||
+Sbjct  640  AATCAGC  646
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  880  AGTGTCT  886
+            |||||||
+Sbjct  652  AGTGTCT  658
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1132  CAGACAC  1138
+             |||||||
+Sbjct  659   CAGACAC  653
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  619  AAGCGGA  625
+            |||||||
+Sbjct  691  AAGCGGA  697
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  32   TCGGTGG  38
+            |||||||
+Sbjct  726  TCGGTGG  720
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1    ATGCAGA  7
+            |||||||
+Sbjct  731  ATGCAGA  737
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  680  AAGAGTT  686
+            |||||||
+Sbjct  758  AAGAGTT  752
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1099  CGGAGTT  1105
+             |||||||
+Sbjct  785   CGGAGTT  779
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1228  AGTGAAC  1234
+             |||||||
+Sbjct  794   AGTGAAC  800
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1142  TGAACAG  1148
+             |||||||
+Sbjct  796   TGAACAG  802
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  536  AACAGGA  542
+            |||||||
+Sbjct  798  AACAGGA  804
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1179  AACAGGA  1185
+             |||||||
+Sbjct  798   AACAGGA  804
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  872  TCAGCAC  878
+            |||||||
+Sbjct  838  TCAGCAC  844
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  136  CTGCAGG  142
+            |||||||
+Sbjct  846  CTGCAGG  852
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1063  TCCTGCA  1069
+             |||||||
+Sbjct  853   TCCTGCA  847
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  934  GGCTCCA  940
+            |||||||
+Sbjct  870  GGCTCCA  864
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  190  GGCTCCA  196
+            |||||||
+Sbjct  870  GGCTCCA  864
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  528  CTGCCAG  534
+            |||||||
+Sbjct  870  CTGCCAG  876
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  350  TACCAAG  356
+            |||||||
+Sbjct  892  TACCAAG  886
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  885  CTACCAA  891
+            |||||||
+Sbjct  893  CTACCAA  887
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  480  TGGTTGG  486
+            |||||||
+Sbjct  909  TGGTTGG  903
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  888  CCAACCA  894
+            |||||||
+Sbjct  903  CCAACCA  909
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  842  CACCTAG  848
+            |||||||
+Sbjct  908  CACCTAG  914
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1043  CCAGCCA  1049
+             |||||||
+Sbjct  924   CCAGCCA  930
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1041  CCCCAGC  1047
+             |||||||
+Sbjct  932   CCCCAGC  938
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  997   CCCAGCT  1003
+             |||||||
+Sbjct  933   CCCAGCT  939
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1077  CACCAGC  1083
+             |||||||
+Sbjct  943   CACCAGC  937
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  875  GCACCAG  881
+            |||||||
+Sbjct  944  GCACCAG  938
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  194  CCATCAG  200
+            |||||||
+Sbjct  952  CCATCAG  958
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  566  CCATCAG  572
+            |||||||
+Sbjct  952  CCATCAG  958
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  975  CTACAGC  981
+            |||||||
+Sbjct  962  CTACAGC  968
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1069  ATGCTGC  1075
+             |||||||
+Sbjct  973   ATGCTGC  967
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1177  TCAACAG  1183
+             |||||||
+Sbjct  973   TCAACAG  979
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  982  GCTCTGC  988
+            |||||||
+Sbjct  985  GCTCTGC  979
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  831  GGCCAGC  837
+            |||||||
+Sbjct  990  GGCCAGC  984
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1255  CCAAGAT  1261
+             |||||||
+Sbjct  1015  CCAAGAT  1009
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  350   TACCAAG  356
+             |||||||
+Sbjct  1017  TACCAAG  1011
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  335   GTACCAA  341
+             |||||||
+Sbjct  1018  GTACCAA  1012
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  407   AGATGGG  413
+             |||||||
+Sbjct  1046  AGATGGG  1040
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  923   CCTTCAC  929
+             |||||||
+Sbjct  1091  CCTTCAC  1097
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1227  AAGTGAA  1233
+             |||||||
+Sbjct  1099  AAGTGAA  1093
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1183  GGACTCA  1189
+             |||||||
+Sbjct  1116  GGACTCA  1110
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  70    TCCACCC  76
+             |||||||
+Sbjct  1114  TCCACCC  1120
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  338   CCAACGA  344
+             |||||||
+Sbjct  1119  CCAACGA  1125
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1251  CTGGCCA  1257
+             |||||||
+Sbjct  1136  CTGGCCA  1142
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  264   CCAGTAT  270
+             |||||||
+Sbjct  1140  CCAGTAT  1146
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  820   CAGAGAA  826
+             |||||||
+Sbjct  1154  CAGAGAA  1160
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  48    CAACGGG  54
+             |||||||
+Sbjct  1172  CAACGGG  1166
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  147   CAACGGA  153
+             |||||||
+Sbjct  1173  CAACGGA  1179
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  424   ATGTATG  430
+             |||||||
+Sbjct  1189  ATGTATG  1183
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  375   AGTTCTT  381
+             |||||||
+Sbjct  1203  AGTTCTT  1197
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  360   GTCATCA  366
+             |||||||
+Sbjct  1209  GTCATCA  1215
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  567   CATCAGT  573
+             |||||||
+Sbjct  1211  CATCAGT  1217
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  49    AACGGGC  55
+             |||||||
+Sbjct  1225  AACGGGC  1231
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  448   AACGGGC  454
+             |||||||
+Sbjct  1225  AACGGGC  1231
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1088  CGGTGAA  1094
+             |||||||
+Sbjct  1234  CGGTGAA  1240
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1002  CTTCACC  1008
+             |||||||
+Sbjct  1241  CTTCACC  1235
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  562   AACTCCA  568
+             |||||||
+Sbjct  1247  AACTCCA  1253
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1153  CCAATGG  1159
+             |||||||
+Sbjct  1251  CCAATGG  1257
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  617   TGAAGCG  623
+             |||||||
+Sbjct  1267  TGAAGCG  1261
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  854   TTCCTAT  860
+             |||||||
+Sbjct  1277  TTCCTAT  1271
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  916   GTTTCCT  922
+             |||||||
+Sbjct  1279  GTTTCCT  1273
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  29    AGCTCGG  35
+             |||||||
+Sbjct  1294  AGCTCGG  1300
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  632   AAAGAAA  638
+             |||||||
+Sbjct  1311  AAAGAAA  1317
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  208   GCAATCG  214
+             |||||||
+Sbjct  1326  GCAATCG  1332
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  778   AATCGAA  784
+             |||||||
+Sbjct  1328  AATCGAA  1334
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  288   CATCTTT  294
+             |||||||
+Sbjct  1335  CATCTTT  1341
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  445   TTGAACG  451
+             |||||||
+Sbjct  1377  TTGAACG  1383
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  838   AACACAC  844
+             |||||||
+Sbjct  1384  AACACAC  1390
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1150  CAGCCAA  1156
+             |||||||
+Sbjct  1424  CAGCCAA  1418
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1043  CCAGCCA  1049
+             |||||||
+Sbjct  1425  CCAGCCA  1419
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  82    AAGATTG  88
+             |||||||
+Sbjct  1427  AAGATTG  1433
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  901   CAACCCA  907
+             |||||||
+Sbjct  1438  CAACCCA  1432
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1029  GCAACCC  1035
+             |||||||
+Sbjct  1439  GCAACCC  1433
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  509   GGCAACC  515
+             |||||||
+Sbjct  1440  GGCAACC  1434
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  131   GAATTCT  137
+             |||||||
+Sbjct  1454  GAATTCT  1448
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  747   ACCTGAA  753
+             |||||||
+Sbjct  1458  ACCTGAA  1452
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1232  AACCTGA  1238
+             |||||||
+Sbjct  1459  AACCTGA  1453
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  690   GAGAACC  696
+             |||||||
+Sbjct  1467  GAGAACC  1461
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  658   GAGCAAA  664
+             |||||||
+Sbjct  1476  GAGCAAA  1482
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  580   GGAGAAG  586
+             |||||||
+Sbjct  1495  GGAGAAG  1501
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  794   GGAGAAG  800
+             |||||||
+Sbjct  1495  GGAGAAG  1501
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  999   CAGCTTC  1005
+             |||||||
+Sbjct  1504  CAGCTTC  1498
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  461   GAAGCTG  467
+             |||||||
+Sbjct  1498  GAAGCTG  1504
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  91    GAGCTAG  97
+             |||||||
+Sbjct  1536  GAGCTAG  1542
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  94    CTAGCTC  100
+             |||||||
+Sbjct  1542  CTAGCTC  1536
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  87    TGTAGAG  93
+             |||||||
+Sbjct  1561  TGTAGAG  1555
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  509   GGCAACC  515
+             |||||||
+Sbjct  1564  GGCAACC  1570
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1202  TGTCAGT  1208
+             |||||||
+Sbjct  1586  TGTCAGT  1580
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1080  CAGCCCT  1086
+             |||||||
+Sbjct  1585  CAGCCCT  1591
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  319   CTGTCCG  325
+             |||||||
+Sbjct  1619  CTGTCCG  1625
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  26    ATCAGCT  32
+             |||||||
+Sbjct  1627  ATCAGCT  1633
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  612   TCAGCTG  618
+             |||||||
+Sbjct  1628  TCAGCTG  1634
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  613   CAGCTGA  619
+             |||||||
+Sbjct  1634  CAGCTGA  1628
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  997   CCCAGCT  1003
+             |||||||
+Sbjct  1636  CCCAGCT  1630
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1041  CCCCAGC  1047
+             |||||||
+Sbjct  1637  CCCCAGC  1631
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  327   GGGGGTC  333
+             |||||||
+Sbjct  1634  GGGGGTC  1640
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  810   ACTGAGG  816
+             |||||||
+Sbjct  1647  ACTGAGG  1641
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1146  CAGTCAG  1152
+             |||||||
+Sbjct  1644  CAGTCAG  1650
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  341   ACGATAA  347
+             |||||||
+Sbjct  1670  ACGATAA  1664
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  294   TGCTTGG  300
+             |||||||
+Sbjct  1679  TGCTTGG  1673
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  882   TGTCTAC  888
+             |||||||
+Sbjct  1683  TGTCTAC  1689
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  145   TCCAACG  151
+             |||||||
+Sbjct  1702  TCCAACG  1708
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  574   TCCAACG  580
+             |||||||
+Sbjct  1702  TCCAACG  1708
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  90    AGAGCTA  96
+             |||||||
+Sbjct  1732  AGAGCTA  1726
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  946   GGCCGAA  952
+             |||||||
+Sbjct  1764  GGCCGAA  1758
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  626   AGCTGCA  632
+             |||||||
+Sbjct  1766  AGCTGCA  1772
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1160  GCACCTC  1166
+             |||||||
+Sbjct  1770  GCACCTC  1776
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1227  AAGTGAA  1233
+             |||||||
+Sbjct  1798  AAGTGAA  1804
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  134   TTCTGCA  140
+             |||||||
+Sbjct  1814  TTCTGCA  1808
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  796   AGAAGAG  802
+             |||||||
+Sbjct  1811  AGAAGAG  1817
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  674   TGGAGAA  680
+             |||||||
+Sbjct  1828  TGGAGAA  1822
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  936   CTCCATG  942
+             |||||||
+Sbjct  1824  CTCCATG  1830
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  994   ATGCCCA  1000
+             |||||||
+Sbjct  1828  ATGCCCA  1834
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1073  TGCCCAC  1079
+             |||||||
+Sbjct  1829  TGCCCAC  1835
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  255   CAAAATA  261
+             |||||||
+Sbjct  1853  CAAAATA  1859
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  735   CAAAATA  741
+             |||||||
+Sbjct  1853  CAAAATA  1859
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  657   AGAGCAA  663
+             |||||||
+Sbjct  1872  AGAGCAA  1878
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  162   TAAAATT  168
+             |||||||
+Sbjct  1934  TAAAATT  1928
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  426   GTATGAT  432
+             |||||||
+Sbjct  1977  GTATGAT  1971
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  699   TTATCCA  705
+             |||||||
+Sbjct  1982  TTATCCA  1988
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  29    AGCTCGG  35
+             |||||||
+Sbjct  2027  AGCTCGG  2021
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  612   TCAGCTG  618
+             |||||||
+Sbjct  2036  TCAGCTG  2042
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  613   CAGCTGA  619
+             |||||||
+Sbjct  2042  CAGCTGA  2036
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  15    CAGCGGA  21
+             |||||||
+Sbjct  2053  CAGCGGA  2047
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1097  GGCGGAG  1103
+             |||||||
+Sbjct  2061  GGCGGAG  2055
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  402   GCAACAG  408
+             |||||||
+Sbjct  2074  GCAACAG  2080
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1178  CAACAGG  1184
+             |||||||
+Sbjct  2075  CAACAGG  2081
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  475   CGCCCTG  481
+             |||||||
+Sbjct  2084  CGCCCTG  2078
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  539   AGGAAGG  545
+             |||||||
+Sbjct  2099  AGGAAGG  2093
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1138  CACATGA  1144
+             |||||||
+Sbjct  2114  CACATGA  2120
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  523   GATGGCT  529
+             |||||||
+Sbjct  2137  GATGGCT  2143
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  189   TGGCTCC  195
+             |||||||
+Sbjct  2139  TGGCTCC  2145
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  933   TGGCTCC  939
+             |||||||
+Sbjct  2139  TGGCTCC  2145
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1004  TCACCAT  1010
+             |||||||
+Sbjct  2149  TCACCAT  2155
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  926   TCACATC  932
+             |||||||
+Sbjct  2155  TCACATC  2161
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1048  CAGACCT  1054
+             |||||||
+Sbjct  2179  CAGACCT  2185
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1021  CTGCCTA  1027
+             |||||||
+Sbjct  2205  CTGCCTA  2199
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1252  TGGCCAA  1258
+             |||||||
+Sbjct  2206  TGGCCAA  2212
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  15    CAGCGGA  21
+             |||||||
+Sbjct  2236  CAGCGGA  2242
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1021  CTGCCTA  1027
+             |||||||
+Sbjct  2262  CTGCCTA  2268
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  514   CCTACGC  520
+             |||||||
+Sbjct  2265  CCTACGC  2271
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  982   GCTCTGC  988
+             |||||||
+Sbjct  2298  GCTCTGC  2304
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  816   GAATCAG  822
+             |||||||
+Sbjct  2313  GAATCAG  2307
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  502   GTGCCAG  508
+             |||||||
+Sbjct  2334  GTGCCAG  2340
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  529   TGCCAGC  535
+             |||||||
+Sbjct  2335  TGCCAGC  2341
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  978   CAGCGCT  984
+             |||||||
+Sbjct  2338  CAGCGCT  2344
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1197  TGGTGTG  1203
+             |||||||
+Sbjct  2366  TGGTGTG  2360
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  653   CCCAAGA  659
+             |||||||
+Sbjct  2370  CCCAAGA  2376
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  755   CAAGAAT  761
+             |||||||
+Sbjct  2372  CAAGAAT  2378
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  578   ACGGAGA  584
+             |||||||
+Sbjct  2393  ACGGAGA  2387
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1213  GTTCAAG  1219
+             |||||||
+Sbjct  2394  GTTCAAG  2400
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  167   TTCTGGG  173
+             |||||||
+Sbjct  2428  TTCTGGG  2434
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  770   GGTTTTC  776
+             |||||||
+Sbjct  2433  GGTTTTC  2439
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1088  CGGTGAA  1094
+             |||||||
+Sbjct  2458  CGGTGAA  2452
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  95    TAGCTCA  101
+             |||||||
+Sbjct  2487  TAGCTCA  2481
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  85    ATTGTAG  91
+             |||||||
+Sbjct  2491  ATTGTAG  2485
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1005  CACCATG  1011
+             |||||||
+Sbjct  2509  CACCATG  2515
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  539   AGGAAGG  545
+             |||||||
+Sbjct  2525  AGGAAGG  2519
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  918   TTCCTCC  924
+             |||||||
+Sbjct  2521  TTCCTCC  2527
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1097  GGCGGAG  1103
+             |||||||
+Sbjct  2530  GGCGGAG  2524
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  859   ATCAGCA  865
+             |||||||
+Sbjct  2539  ATCAGCA  2545
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  872   TCAGCAC  878
+             |||||||
+Sbjct  2540  TCAGCAC  2546
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  105   CGGGGCC  111
+             |||||||
+Sbjct  2557  CGGGGCC  2551
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1220  TTCCCGG  1226
+             |||||||
+Sbjct  2561  TTCCCGG  2555
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  125   TTTCCCG  131
+             |||||||
+Sbjct  2562  TTTCCCG  2556
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1179  AACAGGA  1185
+             |||||||
+Sbjct  2585  AACAGGA  2579
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  536   AACAGGA  542
+             |||||||
+Sbjct  2585  AACAGGA  2579
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  157   GTGAGTA  163
+             |||||||
+Sbjct  2594  GTGAGTA  2588
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  199   AGACCCA  205
+             |||||||
+Sbjct  2603  AGACCCA  2597
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  646   TCCTTTA  652
+             |||||||
+Sbjct  2678  TCCTTTA  2672
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  920   CCTCCTT  926
+             |||||||
+Sbjct  2680  CCTCCTT  2674
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  542   AAGGAGG  548
+             |||||||
+Sbjct  2674  AAGGAGG  2680
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  778   AATCGAA  784
+             |||||||
+Sbjct  2689  AATCGAA  2695
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1237  GATATGT  1243
+             |||||||
+Sbjct  2705  GATATGT  2699
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  696   CCATTAT  702
+             |||||||
+Sbjct  2721  CCATTAT  2715
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  791   AATGGAG  797
+             |||||||
+Sbjct  2717  AATGGAG  2723
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  86    TTGTAGA  92
+             |||||||
+Sbjct  2725  TTGTAGA  2731
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  772   TTTTCTA  778
+             |||||||
+Sbjct  2734  TTTTCTA  2728
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  804   AGAAAAA  810
+             |||||||
+Sbjct  2729  AGAAAAA  2735
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  409   ATGGGCG  415
+             |||||||
+Sbjct  2771  ATGGGCG  2765
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  1155  AATGGGC  1161
+             |||||||
+Sbjct  2772  AATGGGC  2766
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  695   CCCATTA  701
+             |||||||
+Sbjct  2767  CCCATTA  2773
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Minus
+
+Query  891   ACCAATT  897
+             |||||||
+Sbjct  2802  ACCAATT  2796
+
+
+ Score = 14.1 bits (7),  Expect = 200
+ Identities = 7/7 (100%), Gaps = 0/7 (0%)
+ Strand=Plus/Plus
+
+Query  1013  CAAATAA  1019
+             |||||||
+Sbjct  2827  CAAATAA  2833
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.33    0.620     1.10 
+
+Effective search space used: 3560760
+
+
+  Database: User specified sequence set (Input: drosophila.fasta).
+    Posted date:  Unknown
+  Number of letters in database: 2,848
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 2, Extension: 2

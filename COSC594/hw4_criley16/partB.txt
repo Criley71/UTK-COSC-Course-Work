@@ -1,0 +1,14 @@
+contigs: 77
+> awk '{if($0 !~ /^>/) sum += length($0)} END {print sum}' GCA_033847405.1_ASM3384740v1_genomic.fasta
+Assembly Size: 4,995,393
+Average Contig Size: 64,875
+N50: 112,039
+reference coverage = 93.15%
+
+When performing the alignment on the assembly and reference genomes I found 77 conitgs using the show-coords
+prgram and counting all unique tags produced. The assembly size was 4,995,393 nucleotides long with an average
+contig size of 64,875. The N50 is 112,039 meaning that half of the assembly is in contigs longer than 112,039 nucleotides.
+Finding the reference coverage the total amount was 93.15% covered with some contigs being 100% covered with others
+being less than 6% covered. Combining all these factors together this appears to be a decent assembly with the pros 
+being the genome having a good N50 and decent contig coverage. However, the large amount of contigs means that the
+sequence is fragmented with some contigs being poorly covered.

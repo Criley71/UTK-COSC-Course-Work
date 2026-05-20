@@ -1,0 +1,106 @@
+BLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: User specified sequence set (Input: drosophila.fasta).
+           1 sequences; 2,848 total letters
+
+
+
+Query= AY707088.1 Homo sapiens paired box gene 6 isoform a mRNA, complete
+cds
+
+Length=1269
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+X79493.1 D.melanogaster ey mRNA (exons 2-9)                           284     9e-80
+
+
+> X79493.1 D.melanogaster ey mRNA (exons 2-9)
+Length=2848
+
+ Score = 284 bits (366),  Expect = 9e-80
+ Identities = 294/405 (73%), Gaps = 0/405 (0%)
+ Strand=Plus/Plus
+
+Query  4    CAGAACAGTCACAGCGGAGTGAATCAGCTCGGTGGTGTCTTTGTCAACGGGCGGCCACTG  63
+            || ||  ||||||| ||||| |||||||| ||||| || |||||    ||  ||||  ||
+Sbjct  191  CACAAGGGTCACAGTGGAGTAAATCAGCTGGGTGGCGTTTTTGTTGGAGGAAGGCCTTTG  250
+
+Query  64   CCGGACTCCACCCGGCAGAAGATTGTAGAGCTAGCTCACAGCGGGGCCCGGCCGTGCGAC  123
+            || || || || ||||| || ||||| || || || ||    || || ||||| || || 
+Sbjct  251  CCAGATTCAACACGGCAAAAAATTGTCGAACTGGCACATTCTGGAGCTCGGCCATGTGAT  310
+
+Query  124  ATTTCCCGAATTCTGCAGGTGTCCAACGGATGTGTGAGTAAAATTCTGGGCAGGTATTAC  183
+            ||||| ||||||||||| || || || ||||||||||| |||||||| || |||||||| 
+Sbjct  311  ATTTCTCGAATTCTGCAAGTATCAAATGGATGTGTGAGCAAAATTCTCGGGAGGTATTAT  370
+
+Query  184  GAGACTGGCTCCATCAGACCCAGGGCAATCGGTGGTAGTAAACCGAGAGTAGCGACTCCA  243
+            || || ||   |||  ||||  | || ||||| ||    || ||  | || || ||  | 
+Sbjct  371  GAAACAGGAAGCATACGACCACGTGCTATCGGAGGATCCAAGCCACGTGTGGCCACAGCC  430
+
+Query  244  GAAGTTGTAAGCAAAATAGCCCAGTATAAGCGGGAGTGCCCGTCCATCTTTGCTTGGGAA  303
+            ||||| || ||||||||  | ||||| || || ||||| ||   ||| ||||||||||||
+Sbjct  431  GAAGTCGTTAGCAAAATTTCGCAGTACAAACGCGAGTGTCCTAGCATATTTGCTTGGGAA  490
+
+Query  304  ATCCGAGACAGATTACTGTCCGAGGGGGTCTGTACCAACGATAACATACCAAGCGTGTCA  363
+            || || || ||||||||    |||   || ||||| |||||||| |||||||| ||||| 
+Sbjct  491  ATTCGGGATAGATTACTTCAGGAGAACGTTTGTACTAACGATAATATACCAAGTGTGTCC  550
+
+Query  364  TCAATAAACAGAGTTCTTCGCAACCTGGCTAGCGAAAAGCAACAG  408
+            ||||||||| | ||  |  | ||| |||||    ||||| | |||
+Sbjct  551  TCAATAAACCGTGTATTGAGAAACTTGGCTGCGCAAAAGGAGCAG  595
+
+
+ Score = 140 bits (180),  Expect = 1e-36
+ Identities = 173/256 (68%), Gaps = 0/256 (0%)
+ Strand=Plus/Plus
+
+Query  573   TTCCAACGGAGAAGATTCAGATGAGGCTCAAATGCGACTTCAGCTGAAGCGGAAGCTGCA  632
+             ||| ||   || | |  | || || | ||||   || ||    || ||  | ||| ||||
+Sbjct  1264  TTCAAATATAGGAAACACTGAGGATGATCAAGCTCGGCTCATACTAAAAAGAAAGTTGCA  1323
+
+Query  633   AAGAAATAGAACATCCTTTACCCAAGAGCAAATTGAGGCCCTGGAGAAAGAGTTTGAGAG  692
+             | | ||| ||||||| || ||  | || || || ||    || || |||||||||||  |
+Sbjct  1324  ACGCAATCGAACATCTTTCACGAACGACCAGATAGACAGTCTTGAAAAAGAGTTTGAACG  1383
+
+Query  693   AACCCATTATCCAGATGTGTTTGCCCGAGAAAGACTAGCAGCCAAAATAGATCTACCTGA  752
+             ||| || ||||||||||| |||||||| ||| |  | || |  || || |   | || ||
+Sbjct  1384  AACACACTATCCAGATGTTTTTGCCCGCGAACGTTTGGCTGGAAAGATTGGGTTGCCAGA  1443
+
+Query  753   AGCAAGAATACAGGTATGGTTTTCTAATCGAAGGGCCAAATGGAGAAGAGAAGAAAAACT  812
+              |||||||| ||||| ||||| || || ||  | || |||||| |  | || || || ||
+Sbjct  1444  GGCAAGAATTCAGGTTTGGTTCTCAAACCGTCGAGCAAAATGGCGTCGCGAGGAGAAGCT  1503
+
+Query  813   GAGGAATCAGAGAAGA  828
+             | | || ||| |||||
+Sbjct  1504  GCGAAACCAGCGAAGA  1519
+
+
+
+Lambda      K        H
+   0.549    0.333    0.549 
+
+Gapped
+Lambda      K        H
+   0.535    0.270    0.490 
+
+Effective search space used: 3511812
+
+
+  Database: User specified sequence set (Input: drosophila.fasta).
+    Posted date:  Unknown
+  Number of letters in database: 2,848
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 2 -2
+Gap Penalties: Existence: 4, Extension: 4
