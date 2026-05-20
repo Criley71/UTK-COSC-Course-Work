@@ -1,5 +1,5 @@
 # UTK Computer Science Course Work
-
+A compilation of courses that I took while attending UTK
 | Class | Professor | Semester/Year |
 | --------|---| -------- |
 | COSC101 | Crumpton |Spring 2022|
