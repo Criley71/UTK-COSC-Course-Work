@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/criley16/cs360/labs/Lab-8-Jshell'
+gcc -I/home/jplank/cs360/include -o bin/jshell src/jshell.c /home/jplank/cs360/lib/libfdr.a
+make: Leaving directory '/home/criley16/cs360/labs/Lab-8-Jshell'
+ 

@@ -1,0 +1,27 @@
+1. Finite Field Multiplication
+uint8 finite_field_multiply(uint8 a, uint8 b)
+    result = 0 
+    temp = b
+    for (i = 0->7) //go through each bit 
+        if a & 0x01
+            result = result ^ temp //add sum to result
+        temp = xtime(temp) //mutiply by x
+        a = a >> 1 //left shift by 1 
+    return result
+
+
+2. Mix Columns
+mix_coumns(state[4][4])
+    for (1=0 -> 4) //go through each column
+        s1 = state[0][i]
+        s2 = state[1][i]
+        s3 = state[2][i]
+        s4 = state[3][i]
+        temp0 = xtime(s0) ^ (xtime(s1)^s1) ^ s2 ^ s3 //   [1 2 0 0]
+        temp1 = s0 ^ xtime(s1) ^ (xtime(s2)^s2) ^ s3 //   [0 1 2 0]  
+        temp2 = s0 ^ s1 ^ xtime(s2) ^ (xtime(s3)^s3) //   [0 0 1 2]  
+        temp3 = (xtime(s0) ^ s0) ^ s1 ^ s2 ^ xtime(s3) // [2 0 0 1]
+        state[0][i] = temp0 //set the columns to calculated mix 
+        state[1][i] = temp1
+        state[2][i] = temp2
+        state[3][i] = temp3

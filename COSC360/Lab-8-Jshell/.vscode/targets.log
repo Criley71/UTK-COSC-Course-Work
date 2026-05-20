@@ -1,0 +1,383 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Apr  9 19:22:06 2024
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+MODULEPATH = /etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'makefile', line 3)
+INCLUDES = -I/home/jplank/cs360/include
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /home/criley16/cs360/labs/Lab-8-Jshell
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from 'makefile', line 6)
+CFLAGS = $(INCLUDES)
+# environment
+SAVEHIST = 2000
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# environment
+HISTCONTROL = ignoredups
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /home/criley16/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/opt/eecs/root/share
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-VZDvezOW5t,guid=a0ca8b77ddaa492dd373e2866615b145
+# environment
+USER = criley16
+# environment
+VSCODE_CWD = /home/criley16/cs360/labs/Lab-8-Jshell
+# environment
+MODULES_RUN_QUARANTINE = LD_LIBRARY_PATH LD_PRELOAD
+# environment
+SSH_CONNECTION = 10.65.5.172 62698 160.36.56.30 22
+# environment
+PATH = /usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/criley16/bin:/opt/eecs/root/bin:/opt/eecs/root/sbin
+# environment
+SSH_TTY = /dev/pts/1
+# environment
+XDG_RUNTIME_DIR = /run/user/28222
+# environment
+MODULES_CMD = /usr/share/Modules/libexec/modulecmd.tcl
+# environment
+FPATH = /usr/share/Modules/init/zsh-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.5.1/functions
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:
+# makefile (from 'makefile', line 9)
+EXECUTABLES = bin/jshell
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = localhost:10.0
+# environment
+VISUAL = vim
+# environment
+PWD = /home/criley16/cs360/labs/Lab-8-Jshell
+# default
+.LOADED := 
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = ::/opt/eecs/root/share/man
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/criley16
+# environment
+MODULEPATH_modshare = /usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/criley16/.config/Code/CachedData/1e790d77f81672c49be070e04474901747115651
+# environment
+LOGNAME = criley16
+# environment
+TERM = xterm
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+HOSTNAME = hydra22.eecs.utk.edu
+# environment
+MAKELEVEL := 0
+# environment
+SSH_ASKPASS = /usr/libexec/openssh/gnome-ssh-askpass
+# environment
+HISTFILE = /home/criley16/.zsh.history
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 3
+# makefile (from 'makefile', line 1)
+CC = gcc
+# environment
+XDG_SESSION_ID = 519
+# environment
+EDITOR = vim
+# makefile
+.DEFAULT_GOAL := all
+# environment
+LESS = -emiSRX
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/criley16
+# makefile (from 'makefile', line 4)
+LIBDIR = /home/jplank/cs360/lib
+# default
+.VARIABLES := 
+# environment
+CVS_RSH = ssh
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /run/user/28222/vscode-b7f0f5a9-1.87-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+PROMPT = %{[1;31m%}%n%{[0;36m%}:%{[1;31m%}%m %{[0;37m%}%~%{[0;36m%}> %{[0m%}
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 10.65.5.172 62698 22
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
+# environment
+GDK_BACKEND = x11
+# environment
+MODULESHOME = /usr/share/Modules
+# automatic
++F = $(notdir $+)
+# environment
+NO_AT_BRIDGE = 1
+# environment
+S_COLORS = auto
+# environment
+RPROMPT = %{[1;30m%}%{[0;36m%}<- %t%{[0m%}
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from 'makefile', line 7)
+LIBS = $(LIBDIR)/libfdr.a
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+HISTSIZE = 1000
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# environment
+LANG = C
+# environment
+which_declare = typeset -f
+# environment
+VSCODE_PID = 1358694
+# variable set hash-table stats:
+# Load=101/1024=10%, Rehash=0, Collisions=14/135=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 60, inode 713016): 13 files, no impossibilities.
+
+# 13 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+src/strays-files.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/strays-sleep.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/strays.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: bin/jshell
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+
+testers: bin/cattostde bin/strays bin/strays-files bin/strays-fsleep bin/strays-sleep
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/cattostde.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/strays-fsleep.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+ 
+#  Implicit rule search has been done.
+#  Last modified 2024-04-09 17:21:52.543676601
+#  File has been updated.
+#  Successfully updated.
+
+bin/strays-files: src/strays-files.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 29):
+	$(CC) -o bin/strays-files src/strays-files.c
+
+bin/strays-sleep: src/strays-sleep.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 35):
+	$(CC) -o bin/strays-sleep src/strays-sleep.c
+
+bin/strays: src/strays.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 23):
+	$(CC) -o bin/strays src/strays.c
+
+bin/cattostde: src/cattostde.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 26):
+	$(CC) -o bin/cattostde src/cattostde.c
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/jshell.c:
+#  Implicit rule search has been done.
+#  Last modified 2024-04-09 19:18:14.956572458
+#  File has been updated.
+#  Successfully updated.
+
+bin/strays-fsleep: src/strays-fsleep.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 32):
+	$(CC) -o bin/strays-fsleep src/strays-fsleep.c
+
+bin/jshell: src/jshell.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  Last modified 2024-04-09 17:21:52.591677035
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := bin/jshell
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := src/jshell.c
+# automatic
+# | := 
+# automatic
+# < := src/jshell.c
+# automatic
+# ^ := src/jshell.c
+# automatic
+# ? := src/jshell.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/16=6%
+#  recipe to execute (from 'makefile', line 20):
+	$(CC) $(CFLAGS) -o bin/jshell src/jshell.c $(LIBS)
+
+# files hash-table stats:
+# Load=17/1024=2%, Rehash=0, Collisions=0/47=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 31 / storage = 363 B / avg = 11 B
+# current buf: size = 8162 B / used = 363 B / count = 31 / avg = 11 B
+
+# strcache performance: lookups = 51 / hit rate = 39%
+# hash-table stats:
+# Load=31/8192=0%, Rehash=0, Collisions=1/51=2%
+# Finished Make data base on Tue Apr  9 19:22:06 2024
+
+ 

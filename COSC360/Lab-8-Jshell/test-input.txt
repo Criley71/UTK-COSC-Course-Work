@@ -1,0 +1,14 @@
+rm -f f0.txt f1.txt f2.txt f3.txt f4.txt
+END
+
+awk -f /home/jplank/cs360/labs/Lab-8-Jshell/Gradescript-Examples/fun-awk-1.txt
+< /home/jplank/cs360/labs/Lab-8-Jshell/Gradescript-Examples/Input-File-8.txt 
+sort -r 
+sort -r 
+sed s/a/aa/g 
+sort 
+sed s/o/oo/g 
+sed s/o/oo/g 
+sed s/1/11/g
+> f0.txt
+END

@@ -1,0 +1,13 @@
+nqueen.cpp boards searched:
+	size = 8: 16777216
+	size = 10: 1410065408
+nqueen2.cpp boards searched:
+	size = 8: 2496
+	size = 10: 40400
+	
+The benifit of a recursive solution is limiting the amount of writing code as well the amount of for loops required as this 
+would require the amount of for loops equal to the size of the board. The for loops are also significantly slower than a recursive function
+
+constraining the search space to only valid spaces makes it quicker as it will make less possible boards. As well its how most humans 
+would think of solving it as the unoptimized version would place them all in a line attacking eachother while we wouldnt even
+attempt that as we know immediatly that it wont work, same with even placing 2 in the same row we very quickly know it wont work.

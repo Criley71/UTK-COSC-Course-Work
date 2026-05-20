@@ -1,0 +1,6 @@
+The future will be better tomorrow.
+0 1 3 6 10 15
+3 r 239
+24 2
+ddbfcc
+1 3 4 2 5 6

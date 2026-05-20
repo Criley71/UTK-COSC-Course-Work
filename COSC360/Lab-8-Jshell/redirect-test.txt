@@ -1,0 +1,4 @@
+cat -n
+< f1.txt
+> f2.txt
+END

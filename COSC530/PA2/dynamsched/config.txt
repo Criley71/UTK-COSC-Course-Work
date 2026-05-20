@@ -1,0 +1,14 @@
+buffers
+
+eff addr: 6
+fp adds:  1
+fp muls:  2
+ints:     1
+reorder:  10
+
+latencies
+
+fp_add: 1
+fp_sub: 1
+fp_mul: 4
+fp_div: 1

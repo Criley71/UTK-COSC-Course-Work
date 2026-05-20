@@ -1,0 +1,168 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title> CS360 -- Lab Zero -- Pointers and Bit Arithmetic</title>
+
+</head><body>
+<h1> CS360 -- Lab 0 -- Pointers and Bit Arithmetic</h1>
+<ul> <li> CS360 -- Systems Programming
+<li> <a href="http://web.eecs.utk.edu/~jplank">James S. Plank</a>
+<li> 
+This file: <a href="http://web.eecs.utk.edu/~jplank/plank/classes/cs360/360/labs/Lab-0-Pointers/index.html">
+     <b>http://web.eecs.utk.edu/~jplank/plank/classes/cs360/360/labs/Lab-0-Pointers/index.html</a></b>
+<li> Lab Directory: <b>/home/jplank/cs360/labs/Lab-0-Pointers/</b>
+<p>
+<li> <a href=https://web.eecs.utk.edu/~jplank/plank/classes/cs360/360/notes/Pointer-Arithmetic/mherna21.html>Extra study material</a>
+</ul>
+
+<hr>
+<b>Video help</b>: I've made a video of doing the test below (<a href=test.html>test.html</a>),
+which should help you if you find this material confusing or difficult: 
+<a href=https://youtu.be/zENlm38OWbI>https://youtu.be/zENlm38OWbI</a>.
+<hr>
+
+Lab zero is really a quiz, which will be conducted during lab.  Please see the class web
+site for the date.  The questions for the quiz will be <i>exactly</i> like the questions 
+in this lab.  Therefore, use this as practice for the quiz.
+
+<p>
+For each of your practice sessions, log into a lab machine.  There is the following program
+in the lab directory, which you call as follows:
+<p><center><table border=3 cellpadding=3><td><pre>
+/home/jplank/cs360/labs/Lab-0-Pointers/pointer-tester <i>key</i> <i>action</i>
+</pre></td></table></center><p>
+
+The <i>key</i> may be any string -- the string is used to generate a random test.
+If you use the action <tt>"Q"</tt>, then it will print a test, in HTML, on standard
+output.  Let's go ahead and generate a test with the key "binky":
+
+<pre>
+UNIX> <font color=darkred><b>/home/jplank/cs360/labs/Lab-0-Pointers/pointer-tester binky Q > test.html</b></font>
+</pre>
+
+You can see the test here: <a href=test.html>test.html</a>.
+The first line of the test tells you what its key is.  For example, the first line
+of <b><a href=test.html>test.html</a></b> is "Lab Zero. HTML file for key binky:".
+<p>
+The test is composed of 25
+questions.  Each time you generate a test, it will be similar in format, but the
+questions will be different.  The content depends on the key given.
+
+<p>
+When you answer the questions, create a text file with the answers.  
+The first line of an answer file should be the key.  
+After that, 
+each answer should go on its own line,
+and each line should be of the form:
+
+<p><center><table border=3 cellpadding=3><td><pre>
+number answer
+</pre></td></table></center><p>
+
+The <i>number</i> is the question number, and the <i>answer</i> is your answer.  
+Take a look at the file <b><a href=answers.txt>answers.txt</a></b>:
+
+<p><center><table border=3 cellpadding=3><td><pre>
+binky
+0 0x12345678
+1 12345678
+12 0x91
+</pre></td></table></center><p>
+
+As you can see, I have put the key "binky" as the first line.  After that, 
+I have answered questions 0, 1 and 12.  I can tell you that the answer to questions
+0 and 1 are incorrect.  Question 1's answer is in the wrong format, too (it doesn't match the
+<b>printf()</b> statement in the question).  The answer to question 12 is correct.
+<p>
+You can test your answers for correctness, by calling 
+<b>/home/jplank/cs360/labs/Lab-0-Pointers/pointer-tester</b> with the same key that created the HTML file, 
+but with a <tt>"T"</tt> (for "test") instead of a <tt>"Q"</tt> (for "questions").  Redirect
+standard input to come from your answer file.  The program
+will report your answers and whether or not they are correct.  
+<p>
+Here's our example:
+
+<pre>
+UNIX> <font color=darkred><b>/home/jplank/cs360/labs/Lab-0-Pointers/pointer-tester binky T < answers.txt</b></font>
+Question  0: Your answer: 0x12345678 -- Incorrect: +0
+Question  1: Your answer:   12345678 -- Wrong number of characters.  Check your formatting.
+Question  2: Your answer:            -- Incorrect: +0
+Question  3: Your answer:            -- Incorrect: +0
+Question  4: Your answer:            -- Incorrect: +0
+Question  5: Your answer:            -- Incorrect: +0
+Question  6: Your answer:            -- Incorrect: +0
+Question  7: Your answer:            -- Incorrect: +0
+Question  8: Your answer:            -- Incorrect: +0
+Question  9: Your answer:            -- Incorrect: +0
+Question 10: Your answer:            -- Incorrect: +0
+Question 11: Your answer:            -- Incorrect: +0
+Question 12: Your answer:       0x91 -- Correct: +4
+Question 13: Your answer:            -- Incorrect: +0
+Question 14: Your answer:            -- Incorrect: +0
+Question 15: Your answer:            -- Incorrect: +0
+Question 16: Your answer:            -- Incorrect: +0
+Question 17: Your answer:            -- Incorrect: +0
+Question 18: Your answer:            -- Incorrect: +0
+Question 19: Your answer:            -- Incorrect: +0
+Question 20: Your answer:            -- Incorrect: +0
+Question 21: Your answer:            -- Incorrect: +0
+Question 22: Your answer:            -- Incorrect: +0
+Question 23: Your answer:            -- Incorrect: +0
+Question 24: Your answer:            -- Incorrect: +0
+
+Your score: 4 / 100
+UNIX> <font color=darkred><b></b></font>
+</pre>
+
+If you want to see the answers, run the program with the <i>action</i> <tt>"A"</tt>:
+
+<pre>
+UNIX> <font color=darkred><b>/home/jplank/cs360/labs/Lab-0-Pointers/pointer-tester binky A</b></font>
+
+Correct Answers:
+
+ 0 : 0x496f7976
+ 1 : 0x737a6a6c
+ 2 :       0x6e
+ 3 :       0x73
+ 4 :       0x11
+ 5 :       0x78
+ 6 : 0x58ac1144
+ 7 : 0x58ac114c
+ 8 : 0x58ac1141
+ 9 : 0x58ac1151
+10 :     zsPdZm
+11 :     xGDmjR
+12 :       0x91
+13 :       0xb5
+14 :       0x4c
+15 :       0xbf
+16 :       0xa8
+17 :       0x09
+18 : 0x0008b0dc
+19 : 0x5c6bf000
+20 : 0xf8aff64f
+21 : 0xa00df00d
+22 : 0x08a00640
+23 : 0x58a20642
+24 : 0x50784555
+UNIX> <font color=darkred><b></b></font>
+</pre>
+
+<hr>
+Remember -- when you use '%x', all of the digits are lower case.
+<hr>
+A word of advice -- you will find the <b>endian.c</b> program in the
+"C Stuff 2" lecture notes (<a
+href=http://web.eecs.utk.edu/~jplank/plank/classes/cs360/360/notes/CStuff-2/lecture.html>http://web.eecs.utk.edu/~jplank/plank/classes/cs360/360/notes/CStuff-2/lecture.html</a>)
+to be very helpful in doing this lab.  You should read over that
+program and its accompanying writeup before doing this lab.
+
+<hr>
+<h3>The Quiz</h3>
+
+As I said above, you'll be quizzed on this in a timed quiz during lab.  The web site /
+Canvas site will tell you when that is.  The quiz itself will be in the exact same
+format -- question numbers will be different, but the format of the questions will be
+the same.  If you're not rock solid on this material, use this lab as study material
+and practice, practice, practice.
+
